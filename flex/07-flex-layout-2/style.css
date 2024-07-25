@@ -18,6 +18,10 @@ body {
   justify-content: center;
 }
 
+.content {
+  display: flex;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -25,6 +29,8 @@ ul {
 }
 
 a {
+  font-size: 24px;
+  color: white;
   text-decoration: none;
 }
 
@@ -32,17 +38,31 @@ a {
   height: 72px;
   background: #eee;
   color: darkmagenta;
-  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  padding: 16px;
+  flex-shrink: 0;
+}
+
+.cards {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 16px;
+  height: 250px;
+  width: 250px;
 }
